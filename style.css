@@ -1,0 +1,133 @@
+:root {
+    --bg-color: #000000;
+    --text-color: #f4f4f4;
+    --text-down-color: #c7c7c79d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-color);
+    display: grid;
+    grid-auto-flow: row;
+    gap: 6rem;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 100px;
+    border-bottom: 1px solid var(--text-down-color);
+}
+
+.nav h1,
+.nav a#active {
+    color: var(--text-color);
+}
+
+.nav .links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-weight: bold;
+}
+
+.nav .links .link {
+    color: var(--text-down-color);
+}
+
+.nav .links .link:hover {
+    color: var(--text-color);
+}
+
+/* main */
+
+.main {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto;
+    gap: 4rem;
+    padding: 0 4rem;
+}
+
+.main .profile_content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.main .profile_content h1 {
+    color: var(--text-color);
+    font-size: 3.5rem;
+}
+
+
+.main .profile_content h2,
+.main .profile_content p {
+    color: var(--text-down-color);
+}
+
+.main .profile_content h2{
+    font-size: 1.3rem;
+}
+
+.main .profile_content p {
+    line-height: 25px;
+}
+
+.main .profile_content .buttons {
+    margin: 20px 0;
+}
+
+.main .profile_content .buttons a {
+    border: 1px solid var(--text-down-color);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+.main .profile_content .buttons .work-link {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.main .profile_content .buttons .work-link:hover {
+    background-color: var(--text-down-color);
+}
+
+.main .profile_content .buttons .get-link {
+    color: var(--text-color);
+}
+
+.main .profile_content .buttons .get-link:hover {
+    background-color: var(--text-down-color);
+}
+
+
+.main .profile_content .social-link a {
+    color: var(--text-color);
+    font-size: 2rem;
+}
+
+.main .profile_content .social-link a:hover {
+    color: var(--text-down-color);
+}
+
+.main .profile_picture img {
+    border: 5px solid var(--text-down-color);
+    border-radius: 50%;
+
+}
