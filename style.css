@@ -2,6 +2,7 @@
     --bg-color: #000000;
     --text-color: #f4f4f4;
     --text-down-color: #c7c7c79d;
+    --badge-bg: #1d1d1d;
 }
 
 * {
@@ -80,7 +81,7 @@ body {
     color: var(--text-down-color);
 }
 
-.main .profile_content h2{
+.main .profile_content h2 {
     font-size: 1.3rem;
 }
 
@@ -95,7 +96,7 @@ body {
 .main .profile_content .buttons a {
     border: 1px solid var(--text-down-color);
     border-radius: 8px;
-    padding: 10px 15px;
+    padding: 15px 15px;
     margin-right: 10px;
 }
 
@@ -116,14 +117,24 @@ body {
     background-color: var(--text-down-color);
 }
 
+.main .profile_content .social-link {
+    display: flex;
+    gap: 20px;
+}
 
 .main .profile_content .social-link a {
-    color: var(--text-color);
-    font-size: 2rem;
+    color: var(--text-down-color);
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
+.main .profile_content .social-link a span {
+    color: var(--bg-color);
+    visibility: hidden;
 }
 
 .main .profile_content .social-link a:hover {
-    color: var(--text-down-color);
+    color: var(--text-color);
 }
 
 .main .profile_picture img {

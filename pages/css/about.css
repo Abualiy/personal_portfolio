@@ -1,0 +1,101 @@
+body {
+    color: #fff;
+}
+
+h2 svg {
+    width: 50px;
+}
+
+.main-about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.main-about .title-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-about .title-sec p {
+    color: var(--text-down-color);
+}
+
+.main-about .main-content {
+    width: 100%;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+
+.main-about .main-content section {
+    border: 1px solid var(--text-down-color);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.main-about .main-content h2,
+.main-about .main-content p, 
+.main-about .main-content span,
+.main-about .main-content article {
+    font-size: 1rem;
+}
+
+.main-about .main-content .muted, 
+.main-about .main-content .title p{
+    color: var(--text-down-color);
+}
+
+.main-about .main-content article {
+    line-height: 1.5;
+}
+
+.main-about .main-content section .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.main-about .main-content section .title h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-about .main-content section .title h2 svg {
+    width: 1.8rem;
+    background-color: var(--badge-bg);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.main-about .main-content section .content {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-about .main-content section .badges {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-about .main-content section .badges span {
+    background-color: var(--badge-bg);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.main-about .main-content section .left-decor div {
+    border-left: 3px solid var(--text-down-color);
+    padding: 5px 10px;
+}
