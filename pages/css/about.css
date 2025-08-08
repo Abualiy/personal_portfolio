@@ -2,10 +2,6 @@ body {
     color: #fff;
 }
 
-h2 svg {
-    width: 50px;
-}
-
 .main-about {
     width: 100%;
     display: flex;
