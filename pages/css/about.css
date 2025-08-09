@@ -31,20 +31,20 @@ body {
 }
 
 .main-about .main-content section {
-    border: 1px solid var(--text-down-color);
+    border: 1px solid var(--border);
     border-radius: 20px;
     padding: 2rem;
 }
 
 .main-about .main-content h2,
-.main-about .main-content p, 
+.main-about .main-content p,
 .main-about .main-content span,
 .main-about .main-content article {
     font-size: 1rem;
 }
 
-.main-about .main-content .muted, 
-.main-about .main-content .title p{
+.main-about .main-content .muted,
+.main-about .main-content .title p {
     color: var(--text-down-color);
 }
 
@@ -94,4 +94,23 @@ body {
 .main-about .main-content section .left-decor div {
     border-left: 3px solid var(--text-down-color);
     padding: 5px 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .main-about .main-content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+}
+
+@media screen and (max-width: 760px) {
+    .main-about .title-sec {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-about .main-content {
+        padding: 0 2rem;
+    }
 }

@@ -1,0 +1,231 @@
+body {
+    color: var(--text-color);
+}
+
+.main-skill {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.main-skill .title-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-skill .title-sec p {
+    color: var(--text-down-color);
+}
+
+.main-skill .main-content {
+    width: 100%;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+}
+
+.main-skill .main-content section {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.main-skill h2,
+.main-skill h3,
+.main-skill p,
+.main-skill span {
+    font-size: 1rem;
+}
+
+.main-skill p {
+    color: var(--text-down-color);
+    line-height: 1.5rem;
+}
+
+.main-skill .main-content section .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.main-skill .main-content section .title h2,
+.main-skill .skills-and-professional .title h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-skill .main-content section .title h2 svg,
+.main-skill .skills-and-professional .title h2 svg {
+    width: 1.8rem;
+    background-color: var(--badge-bg);
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.main-skill .main-content section ul,
+.main-skill .main-content section ul li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.3rem;
+}
+
+.main-skill .main-content section ul li {
+    gap: .9rem;
+}
+
+.main-skill .main-content section ul li .skill-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-skill .main-content section ul li .skill-info span {
+    background-color: var(--badge-bg);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.main-skill .main-content section ul li .skill-bar {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background-color: var(--badge-bg);
+    overflow: hidden;
+}
+
+.main-skill .main-content section ul li .skill-bar div {
+    height: 100%;
+    background-color: var(--text-color);
+}
+
+.main-skill .main-content section ul li .skill-bar div.w95 {
+    width: 95%;
+}
+
+.main-skill .main-content section ul li .skill-bar div.w90 {
+    width: 90%;
+}
+
+.main-skill .main-content section ul li .skill-bar div.w85 {
+    width: 85%;
+}
+
+.main-skill .main-content section ul li .skill-bar div.w80 {
+    width: 80%;
+}
+
+.main-skill .main-content section ul li .skill-bar div.w75 {
+    width: 75%;
+}
+
+.main-skill .main-content section ul li .skill-bar div.w70 {
+    width: 70%;
+}
+
+.main-skill .skills-and-professional {
+    width: calc(100% - 12rem);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 2rem 4rem;
+}
+
+.main-skill .skills-and-professional .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 2rem;
+}
+
+.main-skill .skills-and-professional .badges {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-skill .skills-and-professional .badges span {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.main-skill .skills-and-professional .badges span:hover {
+    background-color: var(--badge-bg);
+}
+
+.main-skill .prompt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.main-skill .prompt .links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-skill .prompt .links a {
+    padding: 15px 18px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.main-skill .prompt .links a.project {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border);
+}
+
+.main-skill .prompt .links a.project:hover {
+    background-color: var(--badge-bg);
+}
+
+@media screen and (max-width: 900px) {
+    .main-skill .main-content {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .main-skill .title-sec {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-skill .main-content {
+        padding: 0 2rem;
+    }
+
+    .main-skill .skills-and-professional {
+        width: calc(100% - 4rem);
+    }
+
+    .main-skill .prompt {
+        width: 70%;
+    }
+}

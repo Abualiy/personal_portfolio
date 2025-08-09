@@ -1,0 +1,183 @@
+body {
+    color: var(--text-color);
+}
+
+.main-contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 3rem;
+}
+
+.main-contact .title-sec {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+}
+
+.main-contact .title-sec p {
+    color: var(--text-down-color);
+}
+
+.main-contact .main-content {
+    width: 100%;
+    padding: 0 6rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.main-contact .main-content section {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2rem;
+}
+
+.main-contact .main-content h2,
+.main-contact .main-content p,
+.main-contact .main-content span {
+    font-size: 1rem;
+}
+
+.main-contact .main-content .muted,
+.main-contact .main-content p {
+    color: var(--text-down-color);
+}
+
+.main-contact .main-content section .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.main-contact .main-content section ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.main-contact .main-content section ul li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.main-contact .main-content section ul li svg {
+    width: 2.5rem;
+    background-color: var(--badge-bg);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.main-contact .main-content section .follow {
+    
+    padding: 2rem 0;
+    border-top: 1px solid var(--border);
+}
+
+.main-contact .main-content section .follow h2 {
+    margin-bottom: 1rem;
+}
+
+
+.main-contact .main-content section .follow .links {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-contact .main-content section .follow a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--text-down-color);
+    font-size: 1.2rem;
+    margin-top: -20px;
+}
+
+.main-contact .main-content section .follow a svg {
+    width: 2.3rem;
+    background-color: var(--badge-bg);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.main-contact .main-content section .follow a span {
+    color: var(--bg-color);
+    visibility: hidden;
+}
+
+.main-contact .main-content section .follow a:hover {
+    color: var(--text-color);
+}
+
+
+.main-contact .main-content section form,
+.main-contact .main-content section form div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-contact .main-content section form div {
+    gap: 5px;
+}
+
+.main-contact .main-content section form div.addres {
+    width: 100%;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.main-contact .main-content section form div.addres div {
+    width: 50%;
+}
+
+.main-contact .main-content section form input,
+.main-contact .main-content section form textarea {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.main-contact .main-content section form input.submit{
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+.main-contact .main-content section form input.submit:hover {
+    background-color: var(--badge-bg);
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 900px) {
+    .main-contact .main-content {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+}
+
+
+@media screen and (max-width: 760px) {
+    .main-contact .title-sec {
+        width: 80%;
+        text-align: center;
+    }
+
+    .main-contact .main-content {
+        padding: 0 2rem;
+    }
+}
